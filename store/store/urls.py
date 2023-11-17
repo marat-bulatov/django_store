@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 
 from products.views import index, products
+from users.views import login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
+    path('', index, name='home'),
     path('products/', products),
+    path('users/', login),
 ]
