@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from products.views import index, products
+from products.views import index, products, test_context
 from users.views import login
 
 urlpatterns = [
@@ -24,4 +24,5 @@ urlpatterns = [
     path('', index, name='home'),
     path('products/', products),
     path('users/', login),
+    path('test_context/', test_context, name='test_context'),
 ]
