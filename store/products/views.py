@@ -1,6 +1,4 @@
 from django.shortcuts import render
-from samba.dcerpc.dcerpc import request
-
 
 # Create your views here.
 
